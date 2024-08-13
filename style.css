@@ -1,0 +1,127 @@
+* {
+   font-family: Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+section {
+   height: 100vh;
+}
+
+.drink-1 {
+   background: url(img/brett-jordan-aKYu-H5pHJY-unsplash.jpg) center;
+   background-size: cover;
+   border-radius: 15px;
+   width: 300px;
+   height: 300px;
+}
+.drink-2 {
+   background: url(img/qasim-malick-tDU7_HgwdlI-unsplash.jpg) center;
+   background-size: cover;
+   border-radius: 15px;
+   width: 300px;
+   height: 300px;
+}
+.drink-3 {
+   background: url(img/1.jpg) center;
+   background-size: cover;
+   border-radius: 15px;
+   width: 300px;
+   height: 300px;
+}
+.drink-4 {
+   background: url(img/nagy-arnold-CqY5To2ZU8E-unsplash.jpg) center;
+   background-size: cover;
+   border-radius: 15px;
+   width: 300px;
+   height: 300px;
+}
+
+.col {
+   display: flex;
+   flex-direction: column;
+   position: relative; /* agar positioning absolute pada h4 bekerja */
+}
+.col h4 {
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
+   margin-top: auto;
+   color: white;
+   background-color: #000;
+   width: 100%;
+   height: 40px;
+   position: absolute;
+   bottom: -10px;
+   left: 0;
+}
+.popup {
+   display: none;
+   position: fixed;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   padding: 20px;
+   border: 1px solid #ccc;
+   background-color: white;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.popup .close {
+   float: right;
+   cursor: pointer;
+}
+
+form {
+   position: absolute;
+   left: 25%;
+}
+
+label {
+   font-size: 25px;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+
+.label2 {
+   margin-left: 50px;
+}
+
+select {
+   border-radius: 5px;
+   background-color: #7776b3;
+   color: white;
+   padding: 10px;
+   margin-left: 10px;
+}
+option {
+   border-radius: 8px;
+   padding: 10px;
+   margin-left: 10px;
+}
+
+button {
+   background-color: #7776b3;
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   margin: 4px 2px;
+   cursor: pointer;
+   border-radius: 10px;
+}
+.item {
+   display: inline-block;
+   margin: 10px;
+   cursor: pointer;
+}
+
+.item img {
+   width: 100px;
+   height: 100px;
+}
+
+.item.selected {
+   border: 2px solid green;
+}
